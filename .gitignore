@@ -1,0 +1,21 @@
+# Ignore cloned repositories
+Compiler-Impl/clang/
+Compiler-Impl/compiler-rt/
+Compiler-Impl/debug-build/
+Compiler-Impl/libcxx/
+Compiler-Impl/libcxxabi/
+Compiler-Impl/libunwind-debug-build/
+Compiler-Impl/libunwind-release-build/
+Compiler-Impl/libunwind/
+Compiler-Impl/llvm/
+Compiler-Impl/musl/
+
+# Ignore generated setjmp/longjmp assembly files
+Compiler-Impl/src/shadowstack/longjmp.s
+Compiler-Impl/src/shadowstack/setjmp.s
+
+# Ignore build/install directories
+Compiler-Impl/debug-build/
+Compiler-Impl/debug-install/
+Compiler-Impl/release-build/
+Compiler-Impl/release-install/
