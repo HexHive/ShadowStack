@@ -3,6 +3,8 @@ command -v curl >/dev/null 2>&1 || { sudo apt-get install curl; }
 command -v wget >/dev/null 2>&1 || { sudo apt-get install wget; }
 command -v cmake >/dev/null 2>&1 || { sudo apt-get install cmake; }
 command -v ninja >/dev/null 2>&1 || { sudo apt-get install ninja-build; }
+dpkg -l libgtest-dev>/dev/null 2>&1 || { yes | sudo apt-get install libgtest-dev; }
+dpkg -l binutils-dev>/dev/null 2>&1 || { yes | sudo apt-get install binutils-dev; }
 
 LLVM_COMMIT=20230f9b42887e7a3a13c81731656a9bfd90c93a
 CLANG_COMMIT=81684cc58243b49af786438d33fcbbf12a596c56
