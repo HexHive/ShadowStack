@@ -27,6 +27,7 @@ git clone https://github.com/llvm-mirror/compiler-rt.git
 cd compiler-rt
 git checkout $COMPILER_RT_COMMIT
 cd ..
+patch -p7 -u < sanitizer_common.patch
 
 #get libc++
 wget --retry-connrefused --tries=100 releases.llvm.org/5.0.1/libcxx-5.0.1.src.tar.xz
